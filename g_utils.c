@@ -656,7 +656,7 @@ qboolean ssp_client_is_extreme_spawn_protected (edict_t *ent)
 
 #ifdef SSP_TUNE_SPAWNS
 
-static char * ssp_remap_spawn (char * item_classname, cvar_t * remap_cvar)
+static char * ssp_remap_spawn (const char * item_classname, cvar_t * remap_cvar)
 {
 	// HORRID STATIC BUF ALERT!
 	// We depend on the return value from this function being
@@ -708,7 +708,7 @@ static cvar_t **ssp_spawn_remaps[] = {
 	NULL
 };
 
-char * ssp_tune_spawn (char * item_classname)
+const char * ssp_tune_spawn (const char * item_classname)
 {
 	// Handle generic remaps:
 	{

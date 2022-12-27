@@ -765,7 +765,7 @@ extern void		ssp_set_client_spawn_protect_effect (edict_t *ent);
 extern qboolean	ssp_client_is_extreme_spawn_protected (edict_t *ent);
 #endif
 #ifdef SSP_TUNE_SPAWNS
-extern char * ssp_tune_spawn (char * item_classname);
+extern const char * ssp_tune_spawn (const char * item_classname);
 #endif
 
 //
