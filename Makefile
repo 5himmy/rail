@@ -104,7 +104,7 @@ OBJS := \
 	p_weapon.o \
 	q_shared.o
 
-TARGET ?= game$(CPU)-railz-r$(VER).so	
+TARGET ?= game$(CPU)-insta-r$(VER).so	
 
 all: $(TARGET)
 
