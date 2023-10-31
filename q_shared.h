@@ -112,13 +112,13 @@ typedef uint64_t uint64;
 void Q_strlwr (char *str);
 int Q_vsnprintf (char *buff, size_t len, const char *fmt, va_list va);
 //int Q_snprintf (char *buff, size_t len, const char *fmt, ...);
-#ifdef LINUX
-#define	Q_DEBUGBREAKPOINT _Q_DEBUGBREAKPOINT()
-#define DEBUGBREAKPOINT __asm ("int $3")
-#else
-#define	Q_DEBUGBREAKPOINT ((void)0)
-#define DEBUGBREAKPOINT ((void)0)
-#endif
+//#ifdef LINUX
+//#define	Q_DEBUGBREAKPOINT _Q_DEBUGBREAKPOINT()
+//#define DEBUGBREAKPOINT __asm ("int $3")
+//#else
+//#define	Q_DEBUGBREAKPOINT ((void)0)
+//#define DEBUGBREAKPOINT ((void)0)
+//#endif
 
 #endif
 
